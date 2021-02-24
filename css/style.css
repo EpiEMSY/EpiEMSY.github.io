@@ -5,7 +5,7 @@
 }
 
 #banner{
-	background: linear-gradient(rgba(255,255,255,0.5), #fe7926),url(../img/banner.png);
+	background: linear-gradient(rgba(255,255,255,0.5), #e9a78c),url(../img/tomnoob.png);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -127,7 +127,7 @@ nav ul li a{
 #the-project{
 	width: 100%;
 	padding: 70px 0;
-	background:linear-gradient(#fe7926 0, #d90218 50%, #fff 100%);
+	background:linear-gradient(#e9a78c 0, #fe8532 50%, #fe8532 100%);
 
 }
 
@@ -237,7 +237,7 @@ nav ul li a{
 #group{
 	width: 100%;
 	padding: 70px 0;
-	background:linear-gradient(#fff, #a5ea31);
+	background:linear-gradient(#fe8532 0%, #a5ea31 50%, #a5ea31 100%);
 }
 
 .overlay{
@@ -409,7 +409,7 @@ hr{
 #docs{
 	width: 100%;
 	padding: 70px 0;
-	background:linear-gradient(#a5ea31 0%, #f4d4bc 50%, #f4d4bc 100%);
+	background:linear-gradient(#a5ea31 0%, #da0017 50%, #fff 100%);
 }
 
 .doc-row{
@@ -432,6 +432,7 @@ hr{
 .pres-col ul{
 	font-size: 20px;
 	text-align: center;
+	color: #fff;
 }
 
 .pres-col ul li{
@@ -447,7 +448,7 @@ hr{
 
 .pres-col ul li:hover{
 	transform: translateY(-7px);
-	border:  2px solid #003d59;
+	border:  2px solid #00a2dd;
 }
 
 .tool-box ul{
@@ -464,11 +465,12 @@ hr{
 	border:  0.5px solid #003d59;
 	cursor: pointer;
 	transition: transform .5s;
+	color: #fff;
 }
 
 .tool-box ul li:hover{
 	transform: translateY(-7px);
-	border:  2px solid #003d59;
+	border:  2px solid #00a2dd;
 }
 
 @media screen and (max-width: 770px){
@@ -480,13 +482,12 @@ hr{
 /*--footer--*/
 #footer{
 	padding: 100px 0 20px;
-	background:linear-gradient(#f4d4bc, #00a2dd);
+	background:linear-gradient(#fff, #00a2dd);
 	position: relative;
 }
 
 .footer-img{
 	max-width: 400px;
-	opacity: 0.2;
 	position: absolute;
 	left: 50%;
 	top: 25%;
