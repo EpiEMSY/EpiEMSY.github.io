@@ -291,7 +291,7 @@ hr{
 }
 
 .item:hover .member-desc{
-	bottom: 35%;
+	bottom: 40%;
 	opacity: 1;
 }
 
@@ -398,7 +398,7 @@ hr{
 	}
 	/*--have to change depending on the length of the description to 25 or so*/
 	.item:hover .member-desc{
-		bottom: 15%; 
+		bottom: 30%;
 	}
 
 	/*--carousel--*/
