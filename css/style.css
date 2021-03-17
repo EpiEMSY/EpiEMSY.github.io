@@ -14,20 +14,21 @@
 .logo{
 	width: 150px;
 	position: absolute;
-	top: 4%;
+	top: 5%;
 	left: 10%;
 }
 
 .tom{
-	left: 43%;
+	top: 5%;
+	left: 41%;
 	position: absolute;
-	width: 200px;
+	width: 350px;
 }
 
 .banner-text{
 	text-align: center;
 	color: #000;
-	padding-top: 180px;
+	padding-top: 350px;
 }
 
 .banner-text h1{
@@ -119,8 +120,10 @@ nav ul li a{
 	#menuBtn{
 		right: 60px;
 	}
+	.banner-text{
+		padding-top: 300px;
+	}
 	.banner-text h1{
-		margin-top: 120px;
 		font-size: 44px;
 	}
 	.banner-btn a{
@@ -128,8 +131,9 @@ nav ul li a{
 		margin: 20px auto;
 	}
 	.tom{
+		width: 200px;
 		left: 30%;
-		top: 13%;
+		top: 14%;
 	}
 }
 
