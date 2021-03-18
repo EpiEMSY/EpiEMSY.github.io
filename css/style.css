@@ -19,20 +19,20 @@
 }
 
 .tom{
-	top: 5%;
+	top: 3%;
 	left: 41%;
 	position: absolute;
-	width: 350px;
+	width: 250px;
 }
 
 .banner-text{
 	text-align: center;
 	color: #000;
-	padding-top: 350px;
+	padding-top: 220px;
 }
 
 .banner-text h1{
-	font-size: 130px;
+	font-size: 100px;
 	font-family: 'Kaushan Script', cursive;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .banner-btn{
-	margin: 70px auto 0;
+	margin: 50px auto 0;
 }
 
 .banner-btn a{
@@ -121,10 +121,13 @@ nav ul li a{
 		right: 60px;
 	}
 	.banner-text{
-		padding-top: 300px;
+		padding-top: 250px;
 	}
 	.banner-text h1{
 		font-size: 44px;
+	}
+	.banner-btn{
+		margin: 20px auto 0;
 	}
 	.banner-btn a{
 		display: block;
@@ -132,7 +135,7 @@ nav ul li a{
 	}
 	.tom{
 		width: 200px;
-		left: 30%;
+		left: 25%;
 		top: 14%;
 	}
 }
