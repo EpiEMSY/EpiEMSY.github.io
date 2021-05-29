@@ -45,7 +45,9 @@
 				<p>Projet</p>
 				<h1>Qu'est-ce?</h1>
 			</div>
-			<div class="project-box">
+			<button class="tablink" style="margin-left: 2%;" onclick="demo('project-box', this, '#003d59')" id="defaultTab"><i class="fa fa-magic"></i>	Features</button>
+			<button class="tablink" onclick="demo('screenshots', this, '#003d59')"><i class="fa fa-camera"></i>	Screenshots</button>
+			<div id="project-box" class="tabcontent">
 				<div class=features>
 					<h1>Les features</h1>
 					<div class="features-desc">
@@ -75,6 +77,20 @@
 				</div>
 				<div class=features-img>
 					<img src="img/blender.png">
+				</div>
+			</div>
+			<div id="screenshots" class="tabcontent">
+				<div class="single-screen">
+					<img src="img/plain.png">
+				</div>
+				<div class="single-screen">
+					<img src="img/plain.png">
+				</div>
+				<div class="single-screen">
+					<img src="img/plain.png">
+				</div>
+				<div class="single-screen">
+					<img src="img/plain.png">
 				</div>
 			</div>
 		</section>
@@ -156,11 +172,19 @@
 						<!--<li><div onclick="openInNewTab(location.href='');">Le télécharger</div></li>-->
 					</ul>
 				</div>
+				<div class="pres-col">
+					<ul>Troisième soutenance
+						<li><div onclick="openInNewTab('docs/Plan_de_soutenance_2.pdf');">Plan</div></li>
+						<li><div onclick="openInNewTab('docs/RDS_2_TomNoob_s_blender.pdf');">Rapport</div></li>
+						<li><div onclick="openInNewTab(location.href='');">Le télécharger</div></li>
+					</ul>
+				</div>
 
 				<div class="pres-col">
 					<ul>Documents Utiles
 						<li><div onclick="openInNewTab('docs/requirements.pdf');">Cahier des charges</div></li>
-						<!--<li><div onclick="openInNewTab(location.href='');">User Manuel</div></li>-->
+						<li><div onclick="openInNewTab(location.href='');">Manuel d'installation</div></li>
+						<li><div onclick="openInNewTab(location.href='');">Manuel d'utilisateur</div></li>
 					</ul>
 				</div>
 				<div class="tool-box">
@@ -191,9 +215,27 @@
 		</section>
 
 		<script>
-			function openInNewTab(url) {
-  				var win = window.open(url, '_blank');
-  				win.focus();
+			document.getElementById("defaultTab").click();
+
+			function demo(pageName,elmnt,color) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablink");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].style.backgroundColor = "";
+					tablinks[i].style.color="#000";
+				}
+				document.getElementById(pageName).style.display = "flex";
+				elmnt.style.backgroundColor = color;
+				elmnt.style.color = "#fff"
+				}
+
+				function openInNewTab(url) {
+	  				var win = window.open(url, '_blank');
+	  				win.focus();
 			}
 
 			var menuBtn = document.getElementById("menuBtn")

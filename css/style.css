@@ -438,7 +438,7 @@ hr{
 }
 
 .pres-col, .tool-box{
-	flex-basis: 20%; /*28 for 3 cols; 20 for 4 cols*/
+	flex-basis: 17%; /*28 for 3 cols; 20 for 4 cols; 17 for 5*/
 	padding: 10px;
 	margin-bottom: 30px;
 	border-radius: 5px;
@@ -538,4 +538,40 @@ hr{
 	.footer-img{
 		top: 19%;
 	}
+}
+
+.tablink {
+  background-color: #f0f0f0;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 48%;
+  margin-bottom: 2%;
+}
+
+.tabcontent {
+  color: black;
+  display: none;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.single-screen{
+	flex-basis: 48%;
+	text-align: center;
+	border-radius: 7px;
+	margin-bottom: 20px;
+}
+
+.single-screen img{
+	width: 100%;
+	border-radius: 7px;
 }
