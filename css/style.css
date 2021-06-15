@@ -438,7 +438,7 @@ hr{
 }
 
 .pres-col, .tool-box{
-	flex-basis: 17%; /*28 for 3 cols; 20 for 4 cols; 17 for 5*/
+	flex-basis: 20%; /*28 for 3 cols; 20 for 4 cols; 17 for 5*/
 	padding: 10px;
 	margin-bottom: 30px;
 	border-radius: 5px;
